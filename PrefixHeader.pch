@@ -1,0 +1,55 @@
+//
+//  PrefixHeader.pch
+//  ZENWork
+//
+//  Created by zhangming on 17/3/30.
+//  Copyright © 2017年 youjiesi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "HttpTool.h"
+#import "ImageTool.h"
+#import "UIView+Extension.h"
+#import "UIButton+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIColor+Extension.h"
+#import "UILabel+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIScrollView+EmptyDataSet.h"
+#import "SingleClass.h"
+#import "BAButton.h"
+#import "SortOrderView.h"
+#import "SVProgressHUD.h"
+#import "MBProgressHUD+Add.h"
+
+#import "DAYCalendarView.h"
+#import "MJExtension.h"
+#import "LoadingView.h"
+#import "ResponseError.h"
+#import "CALayer+Addition.h"
+#import <SDWebImage/UIButton+WebCache.h>
+#import <SDWebImage/UIView+WebCache.h>
+
+#define ScreenBounds [[UIScreen mainScreen] bounds]
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define BASECOLOR [UIColor colorWithHexString:@"#F4153D"]
+#define TABBARCOLOR [UIColor colorWithHexString:@"ECECF1"]
+#define TABLEBGCOLOR [UIColor colorWithHexString:@"#EBEBF1"]
+
+#define MJWeakSelf __weak typeof(self) weakSelf = self;
+#define CLASSNAME NSString *className = NSStringFromClass([self class]);
+//成功返回的标志
+#define SuccessResponseCode 1
+
+//网络回传失败域
+#define ResponseFailureDomain @"ResponseFailureDomain"
+
+#define USER_UID @"user_uid"
+#define USER_ACCOUNT @"user_account"
+#define USER_PASSWORD @"user_password"
+
+#endif /* PrefixHeader_pch */
